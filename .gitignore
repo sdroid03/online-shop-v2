@@ -1,0 +1,8 @@
+/.git
+/.idea
+/markup-adaptive
+/node_modules
+.git/
+.idea/
+markup-adaptive/
+node_modules/
