@@ -1,0 +1,152 @@
+.open {
+  cursor: pointer; }
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .title .close {
+    cursor: pointer;
+    font-size: 30px;
+    opacity: 0.5;
+    font-weight: bold; }
+    .title .close:hover {
+      opacity: 1;
+      color: #ff5e1e; }
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  position: relative; }
+  .inputs:first-child {
+    margin-bottom: 10px; }
+  .inputs input {
+    padding: 20px 10px;
+    outline: none;
+    border-radius: 10px; }
+    .inputs input[type=email], .inputs input[type=password] {
+      transition: all 0.30s ease-in-out;
+      outline: none;
+      border: 1px solid #d9d9d9; }
+      .inputs input[type=email]:focus, .inputs input[type=password]:focus {
+        box-shadow: 0 3px 9px #d9d9d9; }
+      .inputs input[type=email]:focus ~ .floating-label,
+      .inputs input[type=email]:not(:placeholder-shown):not(:focus) ~ .floating-label, .inputs input[type=password]:focus ~ .floating-label,
+      .inputs input[type=password]:not(:placeholder-shown):not(:focus) ~ .floating-label {
+        left: 10px;
+        opacity: 1; }
+      .inputs input[type=email]:focus ~ .floating-label,
+      .inputs input[type=email]:not(:focus):valid ~ .floating-label, .inputs input[type=password]:focus ~ .floating-label,
+      .inputs input[type=password]:not(:focus):valid ~ .floating-label {
+        font-size: 13px; }
+      .inputs input[type=email]:not(:placeholder-shown):not(:focus):invalid, .inputs input[type=password]:not(:placeholder-shown):not(:focus):invalid {
+        background: #ffebea; }
+        .inputs input[type=email]:not(:placeholder-shown):not(:focus):invalid ~ .floating-label, .inputs input[type=password]:not(:placeholder-shown):not(:focus):invalid ~ .floating-label {
+          font-size: 13px; }
+        .inputs input[type=email]:not(:placeholder-shown):not(:focus):invalid ~ .wrong, .inputs input[type=password]:not(:placeholder-shown):not(:focus):invalid ~ .wrong {
+          max-height: 200px;
+          margin-top: 5px; }
+      .inputs input[type=email]:focus ~ .floating-label,
+      .inputs input[type=email]:not(:focus):valid ~ .floating-label,
+      .inputs input[type=email]:not(:placeholder-shown):not(:focus):invalid ~ .floating-label, .inputs input[type=password]:focus ~ .floating-label,
+      .inputs input[type=password]:not(:focus):valid ~ .floating-label,
+      .inputs input[type=password]:not(:placeholder-shown):not(:focus):invalid ~ .floating-label {
+        top: 0px; }
+
+.buttons {
+  text-align: center;
+  margin-top: 30px; }
+  .buttons button {
+    padding: 15px 40px;
+    border: 0;
+    background: #ff5e1e;
+    color: white;
+    border-radius: 5px;
+    margin-top: 3px;
+    margin-right: 3px;
+    outline: none;
+    font-size: 15px; }
+    .buttons button:hover {
+      background: #ff743d; }
+  .buttons button + button {
+    margin-left: 30px; }
+
+.inputText {
+  font-size: 17px; }
+
+.floating-label {
+  position: absolute;
+  pointer-events: none;
+  left: 20px;
+  transition: 0.2s ease all; }
+
+.wrong {
+  max-height: 0;
+  transition: 0.28s;
+  overflow: hidden;
+  font-style: italic;
+  color: red; }
+
+.email, .password {
+  top: 40px; }
+
+.vmodal.open .modal-overlay, .vmodal.open .modal-window, .vmodal.hide .modal-overlay, .vmodal.hide .modal-window {
+  opacity: 1; }
+
+.vmodal.open .modal-window {
+  transform: translateY(200px); }
+
+.vmodal.open .modal-overlay {
+  background: rgba(0, 0, 0, 0.5); }
+
+.vmodal.hide .modal-window {
+  transform: translateY(-200px); }
+
+.vmodal.hide .modal-overlay {
+  background: rgba(0, 0, 0, 0); }
+
+.modal-overlay {
+  opacity: 0;
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0);
+  /*transition: background .2s ease-in;*/ }
+
+.modal-window {
+  width: 600px;
+  border-radius: 10px;
+  background: #fff;
+  margin: 0 auto;
+  /*transform: translateY(-200px);*/
+  /*transition: transform .2s ease-in;*/
+  text-align: center; }
+
+.modal-header {
+  padding: 5px 10px;
+  display: flex;
+  justify-content: space-between; }
+
+.modal-title {
+  font-size: 1.5rem; }
+
+.modal-close {
+  cursor: pointer; }
+
+.modal-body {
+  padding: 20px 0; }
+  .modal-body input {
+    outline: none; }
+    .modal-body input + input {
+      margin-top: 10px; }
+
+.modal-footer {
+  padding: 5px 10px; }
+  .modal-footer button {
+    padding: 5px 20px; }
+    .modal-footer button + button {
+      margin-left: 30px; }

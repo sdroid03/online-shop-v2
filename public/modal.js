@@ -1,14 +1,4 @@
-// authorization.addEventListener("click", authorizationModal);
 account.addEventListener("click", accountModal);
-
-// function authorizationModal() {
-//     Swal.fire({
-//         showCloseButton: true,
-//         title: 'Авторизация',
-//         icon: 'error',
-//         text: 'В разработке!'
-//     })
-// }
 
 function accountModal() {
     Swal.fire({
@@ -28,9 +18,7 @@ function _createModal(options) {
             <div class="modal-window" style="width: ${options.width || DEFAULT_WIDTH}">
               <div class="modal-header">
                 <span class="modal-title">${options.title || 'window'}</span>
-                
                 ${options.closable ? `<span class="modal-close" data-close="true">&times;</span>` : ''}
-                
               </div>
               <div class="modal-body">
                 ${options.content || ''}
@@ -96,12 +84,8 @@ const modal = $.modal({
     title: 'Авторизация',
     closable: true,
     content: `
-        <input placeholder="Логин или e-mail">
-        <input placeholder="Пароль">
+        <input type="text" placeholder="Логин или e-mail">
+        <input type="text" placeholder="Пароль">
     `,
     width: '300px'
 })
-
-function openModal() {
-    modal.open()
-}

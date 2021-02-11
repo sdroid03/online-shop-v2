@@ -1,13 +1,13 @@
-import {Site} from "./classes/site.js";
-import {model1, model2, model3} from './classes/items_data.js'
+import {Carousel} from "./classes/carousel_render.js";
+import {model1, model2, model3} from './classes/item_data.js'
 
-const site = new Site('#site')
+const site = new Carousel('#carousel1')
 site.render(model1)
 
-const site2 = new Site('#site2')
+const site2 = new Carousel('#carousel2')
 site2.render(model2)
 
-const site3 = new Site('#site3')
+const site3 = new Carousel('#carousel3')
 site3.render(model3)
 
 
@@ -22,8 +22,8 @@ $('.owl-slider').owlCarousel({
     nav: true,
     smartSpeed: 900,
     navText: [
-        "<i class='fa fa-chevron-left'></i>",
-        "<i class='fa fa-chevron-right'></i>"
+        "<i class='fa fa-chevron-left' />",
+        "<i class='fa fa-chevron-right' />"
     ],
 
     touchDrag: false,
@@ -39,8 +39,8 @@ $('.owl-items').owlCarousel({
     nav: true,
     smartSpeed: 900,
     navText: [
-        "<i class='fa fa-chevron-left'></i>",
-        "<i class='fa fa-chevron-right'></i>"
+        "<i class='fa fa-chevron-left' />",
+        "<i class='fa fa-chevron-right' />"
     ],
 
     responsive: {
@@ -64,8 +64,8 @@ $('.owl-items').owlCarousel({
 $('.owl-brands').owlCarousel({
     loop  : true,
     navText: [
-        "<i class='fa fa-chevron-left'></i>",
-        "<i class='fa fa-chevron-right'></i>"
+        "<i class='fa fa-chevron-left' />",
+        "<i class='fa fa-chevron-right' />"
     ],
     smartSpeed: 900,
 
@@ -89,8 +89,8 @@ $('.owl-brands').owlCarousel({
 $('.owl-numbers').owlCarousel({
     loop  : true,
     navText: [
-        "<i class='fa fa-chevron-left'></i>",
-        "<i class='fa fa-chevron-right'></i>"
+        "<i class='fa fa-chevron-left' />",
+        "<i class='fa fa-chevron-right' />"
     ],
     smartSpeed: 900,
 

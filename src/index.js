@@ -1,21 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import TestReact from './App.js';
+import TestModal from './testModal.js';
+// import TestItem from "./testItem.js";
 
 ReactDOM.render(
     <React.StrictMode>
-        <TestReact />
+        <TestModal />
     </React.StrictMode>,
-    document.getElementById('test_container')
+    document.getElementById('login'),
 );
 
-
-
-// import LikeButton from './App.js';
-//
 // ReactDOM.render(
 //     <React.StrictMode>
-//         <LikeButton />
+//         <TestItem />
 //     </React.StrictMode>,
-//     document.getElementById('like_button_container')
+//     document.getElementById('item')
 // );

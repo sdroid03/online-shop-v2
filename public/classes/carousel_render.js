@@ -1,4 +1,4 @@
-export class Site {
+export class Carousel {
     constructor(selector) {
         this.$el = document.querySelector(selector)
     }
@@ -6,7 +6,7 @@ export class Site {
     render(model) {
         this.$el.innerHTML = '' // очитска шаблона
         model.forEach(block => {
-            this.$el.insertAdjacentHTML('beforeend', block.toHTML())
+            this.$el.insertAdjacentHTML('beforeend', block.render())
         })
     }
 }

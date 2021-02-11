@@ -1,4 +1,4 @@
-import {CarouselItem} from "./blocks.js";
+import {CarouselItem} from "./item.js";
 
 export const model1 = [
     new CarouselItem (
@@ -7,8 +7,8 @@ export const model1 = [
         'NEW',
         'new-triangle-bg',
         'product1.png',
-        '12 300 р. ',
-        '15 500 р.'
+        '12 300',
+        '15 500'
     ),
     new CarouselItem (
         'new-bg',
@@ -16,8 +16,8 @@ export const model1 = [
         'NEW',
         'new-triangle-bg',
         'product2.png',
-        '12 300 р. ',
-        '15 500 р.'
+        '12 300',
+        '15 500'
     ),
     new CarouselItem (
         'new-bg',
@@ -25,8 +25,8 @@ export const model1 = [
         'NEW',
         'new-triangle-bg',
         'product3.png',
-        '12 300 р. ',
-        '15 500 р.'
+        '12 300',
+        '15 500'
     ),
     new CarouselItem (
         'new-bg',
@@ -34,8 +34,8 @@ export const model1 = [
         'NEW',
         'new-triangle-bg',
         'product4.png',
-        '12 300 р. ',
-        '15 500 р.'
+        '12 300',
+        '15 500'
     ),
     new CarouselItem (
         'new-bg',
@@ -43,8 +43,8 @@ export const model1 = [
         'NEW',
         'new-triangle-bg',
         'product1.png',
-        '12 300 р. ',
-        '15 500 р.'
+        '12 300',
+        '15 500'
     )
 ]
 
@@ -55,8 +55,8 @@ export const model2 = [
         '<i class="far fa-thumbs-up"></i>',
         'thumb-triangle-bg',
         'product2.png',
-        '12 300 р. ',
-        '15 500 р.'
+        '12 300',
+        '15 500'
     ),
     new CarouselItem (
         'thumb-bg',
@@ -64,8 +64,8 @@ export const model2 = [
         '<i class="far fa-thumbs-up"></i>',
         'thumb-triangle-bg',
         'product3.png',
-        '12 300 р. ',
-        '15 500 р.'
+        '12 300',
+        '15 500'
     ),
     new CarouselItem (
         'thumb-bg',
@@ -73,8 +73,8 @@ export const model2 = [
         '<i class="far fa-thumbs-up"></i>',
         'thumb-triangle-bg',
         'product4.png',
-        '12 300 р. ',
-        '15 500 р.'
+        '12 300',
+        '15 500'
     ),
     new CarouselItem (
         'thumb-bg',
@@ -82,8 +82,8 @@ export const model2 = [
         '<i class="far fa-thumbs-up"></i>',
         'thumb-triangle-bg',
         'product1.png',
-        '12 300 р. ',
-        '15 500 р.'
+        '12 300',
+        '15 500'
     ),
     new CarouselItem (
         'thumb-bg',
@@ -91,8 +91,8 @@ export const model2 = [
         '<i class="far fa-thumbs-up"></i>',
         'thumb-triangle-bg',
         'product2.png',
-        '12 300 р. ',
-        '15 500 р.'
+        '12 300',
+        '15 500'
     )
 ]
 
@@ -103,8 +103,8 @@ export const model3 = [
         '%',
         'percent-triangle-bg',
         'product3.png',
-        '12 300 р. ',
-        '15 500 р.'
+        '12 300',
+        '15 500'
     ),
     new CarouselItem (
         'percent-bg',
@@ -112,8 +112,8 @@ export const model3 = [
         '%',
         'percent-triangle-bg',
         'product4.png',
-        '12 300 р. ',
-        '15 500 р.'
+        '12 300',
+        '15 500'
     ),
     new CarouselItem (
         'percent-bg',
@@ -121,8 +121,8 @@ export const model3 = [
         '%',
         'percent-triangle-bg',
         'product1.png',
-        '12 300 р. ',
-        '15 500 р.'
+        '12 300',
+        '15 500'
     ),
     new CarouselItem (
         'percent-bg',
@@ -130,8 +130,8 @@ export const model3 = [
         '%',
         'percent-triangle-bg',
         'product2.png',
-        '12 300 р. ',
-        '15 500 р.'
+        '12 300',
+        '15 500'
     ),
     new CarouselItem (
         'percent-bg',
@@ -139,7 +139,7 @@ export const model3 = [
         '%',
         'percent-triangle-bg',
         'product3.png',
-        '12 300 р. ',
-        '15 500 р.'
+        '12 300',
+        '15 500'
     )
 ]
