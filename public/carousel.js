@@ -58,8 +58,6 @@ $('.owl-items').owlCarousel({
         }
     }
 })
-// $( ".owl-prev").html('<i class="fa fa-chevron-left"></i>');
-// $( ".owl-next").html('<i class="fa fa-chevron-right"></i>');
 
 $('.owl-brands').owlCarousel({
     loop  : true,

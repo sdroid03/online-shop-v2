@@ -4,7 +4,7 @@ export class Carousel {
     }
 
     render(model) {
-        this.$el.innerHTML = '' // очитска шаблона
+        this.$el.innerHTML = ''
         model.forEach(block => {
             this.$el.insertAdjacentHTML('beforeend', block.render())
         })

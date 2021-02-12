@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import TestModal from './testModal.js';
+import Modal from './modal.js';
 // import TestItem from "./testItem.js";
 
 ReactDOM.render(
     <React.StrictMode>
-        <TestModal />
+        <Modal />
     </React.StrictMode>,
     document.getElementById('login'),
 );
